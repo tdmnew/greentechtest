@@ -13,6 +13,10 @@
 
     &--logo {
         width: 10rem;
+
+        @media (max-width: 500px) {
+            width: 8rem;
+        }
     }
 
     &--form {
