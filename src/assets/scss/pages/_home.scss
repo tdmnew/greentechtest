@@ -1,0 +1,66 @@
+.login {
+    display: flex;
+    flex-direction: column;
+
+    border: 1px solid #e7e0e0;
+    border-radius: 20px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    background: #ffffff;
+    width: 28rem;
+    height: 24rem;
+    margin: 0 auto;
+    padding: 4rem 2.5rem;
+
+    &--logo {
+        width: 10rem;
+    }
+
+    &--form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &--remember {
+        margin: .5rem .5rem .5rem -.2rem;
+        display: flex;
+        align-items: center;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &--checkbox {
+            width: 1.2rem;
+            height: 1.2rem;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        &--label {
+            font-weight: 200;
+            margin-left: .25rem;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    &--email {
+        &--input {
+            @extend %input;
+        }
+
+        &--label {
+            margin-bottom: .25rem;
+            font-weight: 200;
+        }
+
+    } 
+
+    &--btn {
+        @extend %btn;
+    }
+}

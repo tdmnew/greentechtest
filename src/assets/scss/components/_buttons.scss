@@ -1,0 +1,21 @@
+%btn {
+    width: 7rem;
+    padding: .85rem .5rem;
+    border: 1px solid #e7e0e0;
+    border-radius: 5px;
+    margin-top: 1.5rem;
+    background: #ffffff;
+    font-weight: lighter; 
+    font-size: 17px;
+
+    &:hover {
+        background: #2eaf5e;
+        transition: .5s ease all;
+        cursor: pointer;
+        
+    }
+
+    @media (max-width: 500px) {
+        width: 100%;
+    }
+}
